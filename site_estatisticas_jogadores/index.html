@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estatísticas de Jogadores</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Estatísticas de Jogadores - Top 10 Ligas</h1>
+    <input type="text" id="playerInput" placeholder="Nome do jogador">
+    <button onclick="buscar()">Buscar</button>
+    <pre id="resultado"></pre>
+
+    <script>
+    async function buscar() {
+        const nome = document.getElementById('playerInput').value.toLowerCase();
+        const res = await fetch('data/jogadores.json');
+        const data = await res.json();
+        const jogador = data.find(j => j.nome.toLowerCase() === nome);
+        document.getElementById('resultado').textContent = jogador ? JSON.stringify(jogador, null, 2) : "Jogador não encontrado";
+    }
+    </script>
+</body>
+</html>

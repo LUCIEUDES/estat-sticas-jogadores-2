@@ -1,0 +1,7 @@
+[
+    {"nome": "Vinicius Junior", "time": "Real Madrid", "liga": "La Liga", "finalizacoes": 3.1, "desarmes": 1.2},
+    {"nome": "Kylian Mbappe", "time": "PSG", "liga": "Ligue 1", "finalizacoes": 4.5, "desarmes": 0.5},
+    {"nome": "Erling Haaland", "time": "Manchester City", "liga": "Premier League", "finalizacoes": 5.0, "desarmes": 0.3},
+    {"nome": "Harry Kane", "time": "Bayern", "liga": "Bundesliga", "finalizacoes": 4.2, "desarmes": 0.6},
+    {"nome": "Lautaro Martinez", "time": "Inter de Milão", "liga": "Serie A", "finalizacoes": 3.8, "desarmes": 0.9}
+]
